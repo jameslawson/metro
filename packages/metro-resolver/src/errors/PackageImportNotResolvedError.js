@@ -35,6 +35,7 @@ export default class PackageImportNotResolvedError extends Error {
       `The path for ${opts.importSpecifier} could not be resolved.\nReason: ` +
         opts.reason,
     );
-    Object.assign(this, opts);
+    this.importSpecifier = opts.importSpecifier;
+    this.reason = opts.reason;
   }
 }
