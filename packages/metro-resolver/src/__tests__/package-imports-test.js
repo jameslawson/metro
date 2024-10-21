@@ -16,7 +16,7 @@ import {createPackageAccessors, createResolutionContext} from './utils';
 // See: https://github.com/facebook/metro/issues/978
 //
 
-describe('with package imports resolution enabled', () => {
+describe('package subpath imports resolution', () => {
   describe('main entry point', () => {
     const baseContext = {
       ...createResolutionContext(
